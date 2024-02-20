@@ -10,29 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6811219974:AAGa1KLtSRfFeRh4myQtk6GVD6FYc721YZQ")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5237553670:AAHrokTwTDaZJataTNpRBpfvSkTJKT5Gmwo")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "9389796"))
+APP_ID = int(os.environ.get("APP_ID", "17051142"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "bdc43a2e0501624d3f0a491345a5ac84")
+API_HASH = os.environ.get("API_HASH", "defd382d60eac42cdb0217e51afe90f3")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001893939227"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002079112561"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5197673717"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1981613318"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://OnAnimeSeries:OnAnimeSeries@filexonanimeseries.2lwf4gr.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "FileXOnAnimeSeries")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://adriansangadi1:<password>@cluster0.fquporz.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "adriansangadi1")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001877631854"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002072126879"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5197673717").split()):
+    for x in (os.environ.get("ADMINS", "1981613318").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
